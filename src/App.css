@@ -12,7 +12,6 @@ body{
   background-color: rgb(115, 137, 172);
   width: 750px;
   text-align: center;
-  height: 8vh;
   letter-spacing: 1px;
 }
 .container h3{
@@ -39,33 +38,28 @@ body{
   background-color: rgb(115, 137, 172);
   outline: 0;
   border: 0;
+  cursor: pointer;
 }
 .btn:hover{
   background-color: rgb(46, 62, 91);
   color: #ffff;
-  transition:appo ease-in-out;
+  transition: ease-in-out;
 }
 .appoint-list{
   margin: 20px auto;
   width: 80%;
-  
+ 
 }
 .nav, .display{
   
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
-    padding: 10px;
+    /* padding: 10px; */
 }
 
-.nav label, .display div {
-  text-align: left;
-  padding: 10px;
-}
-.display div {
-  display: flex;
-  align-items: center;
-}
+
+
 
 .display {
   background-color: white;
@@ -75,4 +69,50 @@ body{
 .nav {
   font-weight: bold;
   border-bottom: 2px solid black;
+}
+
+.nav-label{
+  width: 15rem;
+  /* padding: 0px 10px; */
+
+}
+.p-tag{
+  width: 15rem;
+  /* padding: 0px 10px; */
+}
+.edit-delete{
+  display: flex;
+  gap: 12rem;
+
+}
+.edit-btn, .delete-btn{
+  font-size: 14px;
+  border-radius: 10px;
+  padding: 8px 13px;
+  font-weight: 600;
+  background-color: rgb(115, 137, 172);
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+}
+
+
+.quote{
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* transition: 2s ease-in-out; */
+  
+} 
+.quote h3{
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 22px;
+  animation: slide 2s infinite;
+}
+@keyframes slide {
+  0%   {background-color: rgb(148, 170, 205);}
+  50% {background-color: rgb(127, 148, 182);}
+  100% {background-color: rgb(94, 113, 143);}  
 }
